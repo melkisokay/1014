@@ -7,7 +7,7 @@ async function setup () {
   vid = createVideo('media/rabbit.mp4');
   vid.hide(); // Hide the original HTML video element
   vid.loop();
-  mySound = await loadSound('media/stardew.mp3');
+  mySound = await loadSound('media/jingle-bells.mp3');
   
 }
 

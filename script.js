@@ -1,10 +1,16 @@
+let bgImage;
 let img;
 let y = 0;
 let vid;
+
+async function preload() {
+  // 1. Load the image before the program starts
+  bgImage = loadImage('media/winter.jpg'); 
+}
 async function setup () {
-  createCanvas(400, 400);
+  createCanvas(900, 900);
   img = await loadImage('media/hamster.gif');
-  vid = createVideo('media/rabbit.mp4');
+  vid = createVideo('media/snow.mp4');
   vid.hide(); // Hide the original HTML video element
   vid.loop();
   mySound = await loadSound('media/jingle-bells.mp3');
@@ -12,11 +18,11 @@ async function setup () {
 }
 
 function draw () {
-
+image(bgImage, 0, 0, width, height); 
  background(220);
   // tint('red');
   image(img, 0, y);
-  image(vid, width / 2, height / 2, 150, 100);
+  image(vid, width / 2, height / 2, 200, 200);
   y += 2;
   if (y > width) {
     y = 0;

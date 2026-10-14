@@ -1,6 +1,0 @@
-canvas {
-  background-image: url(winter.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; /* Stretches the image to fill the canvas area */
-  background-position: center;
-}

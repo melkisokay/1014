@@ -1,0 +1,22 @@
+canvas {
+  background-image: url('media/winter.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Stretches the image to fill the canvas */
+}
+
+
+<style>
+  #santa {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-image: url('media/santa.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 12px 10px #b6bb95;
+  }
+</style>
+
+<div id="santa"></div>

@@ -13,6 +13,7 @@ async function setup () {
   vid = createVideo('media/rudolph.mp4');
   vid.hide(); // for some reason without this theres 2 videos
   vid.loop();
+  vid.showControls();
   santa = await loadImage('media/santa.png');
   mySound = await loadSound('media/jingle-bells.mp3');
   

@@ -40,7 +40,7 @@ function draw () {
   pop();
   
   //color shifting
-  let h = (frameCount * 5) % 360; 
+  let h = (frameCount * 04) % 360; 
   tint(h, 80, 80);
   image(present2, 600, y * 0.80, 110, 110);
   noTint();

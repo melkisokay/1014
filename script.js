@@ -15,7 +15,7 @@ async function setup () {
   vid.hide(); // for some reason without this theres 2 videos
   vid.loop(); 
   vid.volume(0);
-  vid.showControls();
+  
   santa = await loadImage('media/santa.png');
   mySound = await loadSound('media/jingle-bells.mp3');
   

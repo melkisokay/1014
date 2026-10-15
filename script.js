@@ -11,9 +11,9 @@ async function setup () {
   present = await loadImage('media/present.png');
   present2 = await loadImage('media/presents.png');
   
-  vid = createVideo('media/rudolph.mp4');
-  // vid.hide(); // for some reason without this theres 2 videos
- // vid.loop();
+  vid = createVideo('media/rudolph.mp4'); //is blocked bc of browser settings unless autoplay is allowed
+  vid.hide(); // for some reason without this theres 2 videos
+  vid.loop(); 
   vid.showControls();
   santa = await loadImage('media/santa.png');
   mySound = await loadSound('media/jingle-bells.mp3');
